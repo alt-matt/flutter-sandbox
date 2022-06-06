@@ -8,5 +8,10 @@
 	<true/>
 	<key>com.apple.security.network.server</key>
 	<true/>
+<<<<<<< Updated upstream
+=======
+	<key>com.apple.security.network.client</key>
+	<true/>
+>>>>>>> Stashed changes
 </dict>
 </plist>

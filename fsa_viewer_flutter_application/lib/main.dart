@@ -1,12 +1,19 @@
 import 'package:flutter/material.dart';
+<<<<<<< Updated upstream
 
 void main() {
   runApp(const MyApp());
 }
+=======
+import 'screens/EstablishmentList.dart';
+
+void main() => runApp(const MyApp());
+>>>>>>> Stashed changes
 
 class MyApp extends StatelessWidget {
   const MyApp({Key? key}) : super(key: key);
 
+<<<<<<< Updated upstream
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
@@ -113,3 +120,13 @@ class _MyHomePageState extends State<MyHomePage> {
     );
   }
 }
+=======
+  @override
+  Widget build(BuildContext context) {
+    return const MaterialApp(
+      title: 'Material App',
+      home: EstablishmentList(),
+    );
+  }
+}
+>>>>>>> Stashed changes
