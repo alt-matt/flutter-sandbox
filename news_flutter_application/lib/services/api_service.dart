@@ -7,13 +7,15 @@ import '../model/article_model.dart';
 class ApiService {
   final endPointUrl = "newsapi.org";
   final client = http.Client();
-Future<List<Article>> getArticle() async {
+Future<List<Article>> getArticle(category) async {
     
     final queryParameters = {
-      'country': 'us',
-      'category': 'technology',
+      'country': 'gb',
       'apiKey': 'ad34a042ba9d4775a4c0aa8c18fc708c'
     };
+
+  if (category != '') {queryParameters["category"] = category;}
+
 final uri = Uri.https(endPointUrl, '/v2/top-headlines', queryParameters);
     log(uri.toString());
     final response = await client.get(uri);
